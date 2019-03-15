@@ -15,7 +15,6 @@ class Pavlova extends StatelessWidget {
                     'Pavlova is a meringue-based dessert named after the Russian ballerina'
                 'Anna Pavlova. Pavlova features a crisp crust and soft, light inside,topped'
                 'with fruit and whipped cream.',
-                
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontFamily: 'Georgia',
@@ -113,7 +112,7 @@ class Pavlova extends StatelessWidget {
         ),
         body: Center(
         child: Container(
-          margin: EdgeInsets.fromLTRB(0, 40, 0, 30),
+          margin: EdgeInsets.fromLTRB(0, 30, 0, 40),
           height: 600,
           child: Card(
             child: Row(
@@ -135,6 +134,7 @@ class Pavlova extends StatelessWidget {
   
   Widget buildIcons(IconData iconData,String title,String subTitle,Color color) {
     Widget iconItem = Column(
+      
       children: <Widget>[
         Icon(
           iconData,
